@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<app-navbar></app-navbar>
+<br>
+<div class="row">
+  <div class="col-md-6" style="margin-left: 20px; margin-right: 20px">
+    <div class="panel panel-default" *ngFor="let emp1 of employee">
+      <div class="panel-body" >
+          {{emp1.text}}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5" style="margin-left: 20px; margin-right: 20px">
+<div class="row">
+<app-dash></app-dash>
+<app-dashbar></app-dashbar>
+</div>
+  </div>
+</div>
+
